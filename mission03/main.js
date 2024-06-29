@@ -49,6 +49,9 @@ const data = [
 new Swiper(".solar-system-swiper", {
   speed: 1000,
   parallax: true,
+  keyboard: {
+    enabled: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
