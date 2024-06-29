@@ -9,8 +9,8 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  min-width: 500px;
-  min-height: 650px;
+  min-width: 350px;
+  min-height: 550px;
   background: #000;
   font-family: 'DOSGothic', serif;
   color: #000;
@@ -91,6 +91,12 @@ body {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s;
+  
+  @media (max-width: 480px) {
+    padding: 0;
+    margin: 0;
+  }
+  
 }
 
 .bullet.is-active {
