@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'DOSGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 500px;
+  min-height: 650px;
+  background: #000;
+  font-family: 'DOSGothic', serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff
+}
+
+.swiper-slide {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1500%;
+  height: 100%;
+  -webkit-background-size: contain;
+  background-image: url('./assets/Star.svg');
+  background-size: contain;
+  background-position: center;
+}
+
+.swiper-slide .planetImg img {
+  width: 50vw;
+  max-width: 800px;
+
+  @media (min-width: 1024px) {
+    width: 30vw;
+  }
+}
+
+.swiper-slide .engName {
+  font-size: 15vw;
+  font-weight: bold;
+
+  @media (min-width: 1024px) {
+    font-size: 10rem;
+  }
+
+  @media (min-width: 1024px) and (max-height: 1000px) {
+    font-size: 6rem;
+  }
+}
+
+.swiper-slide .korName {
+  font-size: 12vw;
+  font-weight: bolder;
+
+  @media (min-width: 1024px) {
+    font-size: 8rem;
+  }
+
+  @media (min-width: 1024px) and (max-height: 1000px) {
+    font-size: 4rem;
+  }
+}
+
+.bullet {
+  width: 100px;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.bullet.is-active {
+  opacity: 1;
+}
