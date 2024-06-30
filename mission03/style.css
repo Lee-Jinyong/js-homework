@@ -84,6 +84,11 @@ body {
   }
 }
 
+.swiper .swiper-pagination {
+  height: 30px;
+  top: 30px;
+}
+
 .bullet {
   width: 100px;
   padding: 0.2rem;
@@ -91,6 +96,7 @@ body {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s;
+  
   
   @media (max-width: 480px) {
     padding: 0;
