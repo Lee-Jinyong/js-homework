@@ -11,7 +11,7 @@
 
 ---
 ### JavaScript 간단 설명
-##### 파일 바로가기 [main.js](js/main.js "mission00-2.js")
+##### 파일 바로가기 [main.js](js/main.js "mission01 main.js")
 
 &nbsp;
 ##### validationDebounce 함수
