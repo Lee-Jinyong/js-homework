@@ -1,6 +1,6 @@
 
 
-class AudioPlayer {
+export default class AudioPlayer {
   #audio = null;
 
   constructor(source) {
